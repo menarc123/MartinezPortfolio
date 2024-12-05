@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menarc Martinez - IT Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Header (Navigation Bar) -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="shsgradpic.jpg" alt="Menarc Martinez" />
+      </div>
+      <h1>Hi, I'm Menarc Martinez</h1>
+      <p>I'm a passionate IT Developer specializing in web development and programming.</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Menarc, an IT Developer with a love for creating clean, efficient code and user-friendly web applications. 
+      I specialize in front-end development with HTML, CSS, and JavaScript, and I’m constantly learning and improving my skills.
+    </p>
+    <p>
+      I believe in continuous learning and love to explore new frameworks and tools that help me create better digital experiences.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Here are some of the technologies I'm proficient in:</p>
+    <ul class="skills-list">
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Node.js</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Web Design</li>
+      <li>Database Management (MySQL, MongoDB)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Project 1: Resume</h3>
+        <p>
+          My first Websytem and Technologies activity was to create my personal resume. <a href="Resume.png" target="_blank">Click here</a> to view.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project 2: Multiplication Table</h3>
+        <p>
+          My second Websytem and Technologies activity was to create a simple multiplication table using JavaScript. <a href="MultiplicationTable.png" target="_blank">Click here</a> to view.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project 3: Enrollment Form</h3>
+        <p>
+          This project allowed me to create a simple enrollment form, though I plan on expanding it into a more complex form in the future. <a href="EnrollmentForm.png" target="_blank">Click here</a> to view.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project 4: BirthMonth Calendar</h3>
+        <p>
+          This project lets you see a custom calendar with my birthdate highlighted, showcasing my design skills. <a href="BirthM.png" target="_blank">Click here</a> to view.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to collaborate, learn more, or just say hello, feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="https://www.facebook.com/Menarccc" class="social-link" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/cracranem/" class="social-link" target="_blank">Instagram</a>
+      <a href="https://myaccount.google.com/?hl=en&gar=WzEyMF0" class="social-link">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Menarc Martinez. All rights reserved.</p>
+    <p>Built with ❤️ and dedication to continuous learning.</p>
+  </footer>
+
+  <!-- JavaScript for Smooth Scroll -->
+  <script>
+    // Smooth Scroll Functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
